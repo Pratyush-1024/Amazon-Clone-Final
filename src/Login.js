@@ -49,9 +49,15 @@ function Login() {
 
   return (
     <div className='login'>
+
+<img
+            className="login__logo"
+            src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-HD.png"
+            alt="amazon-logo"
+          />
         
         <div className='login__formDetails'>
-        <h1>Sign In</h1>
+        <h1 className='login__heading'>Sign In</h1>
         
         <form action="#" method="post">
 

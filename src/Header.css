@@ -84,13 +84,22 @@
   }
 
   
- /*@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .header {
-      flex-direction: column;
-    }
-  
-    .header__searchDiv {
-      margin-top: 10px;
+      padding: 10px;
     }
   }
-  */
+
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px; 
+    }
+
+    .header__searchBar {
+      flex: 1;
+      font-size: 14px;
+      padding: 5px;
+    }
+  }

@@ -5,7 +5,7 @@ import './CheckoutProduct.css'
 
 function CheckoutProduct({id,title,image,price,rating}) {
 
-    const [dispatch]=useStateValue();
+    const [{basket},dispatch]=useStateValue();
 
     const removeFromBasket = ()=>{
         dispatch({
@@ -29,11 +29,12 @@ function CheckoutProduct({id,title,image,price,rating}) {
           .map((_, index) => (
             <p key={index}>⭐</p>
           ))}
-          <div>
-          <button className='checkoutProduct__button' onClick={removeFromBasket}>Remove From Bakset</button></div>
+          </div>
+          
+          <button className='checkoutProduct__button' onClick={removeFromBasket}>Remove From Bakset</button>
          
           
-      </div>
+      
       </div>
         <img className='checkoutProduct__image'src={image} alt='checkoutProduct-image' />
        

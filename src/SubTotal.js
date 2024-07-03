@@ -11,9 +11,9 @@ function SubTotal() {
         <div className='subtotal'>
             <CurrencyFormat
                 renderText={(value) => (
-                    <>
+                    <div className='subtotal__details'>
                         <p className='subtotal__text'>
-                            Subtotal ({basket?.length} items: <strong>{value}</strong>)
+                            Subtotal ({basket?.length} items): <strong>{value}</strong>
                         </p>
                         <small className='subtotal__gift'>
                             <label>
@@ -21,7 +21,7 @@ function SubTotal() {
                                 This order contains a gift
                             </label>
                         </small>
-                    </>
+                    </div>
                 )}
                 decimalScale={2}
                 value={getBasketTotal(basket)}

@@ -42,10 +42,10 @@ function Header({ enteredAddress ,enteredName}) {
         <Link to={'/address'} className="link">
 
           <div>
-            <span className='small'>Hello {enteredName}</span>
+            <span className='small'>Deliver to {enteredName}</span>
           </div>
           <div>
-            <span className="header__address bold">Deliver at {enteredAddress}</span>
+            <span className="header__address bold">{enteredAddress}</span>
           </div>
         </Link>
       </div>

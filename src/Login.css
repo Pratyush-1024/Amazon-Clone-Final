@@ -1,23 +1,97 @@
-.login { display: flex; flex-direction: column; align-items: center; margin-top: 50px;justify-content: center; }
 
-.login h1 { font-size: 24px; margin-bottom: 20px; }
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100vh;
+  }
+  
+  .login h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login__label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .login__inp {
+    width: 93%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    border: 0.5px solid #656363;
+    margin-right: 10px;
+    box-shadow: none;
+    transition: box-shadow 0.3s;
 
-.login__label { display: block; font-weight: bold; text-align: left; margin-bottom: 5px; }
+  }
 
-.login__inp { width: 100%; padding: 10px; margin-top: 5px; border: none; border-radius: 3px; }
+  .login__inp:focus {
+    box-shadow: 0 0 5px aqua; 
+  }
+  
+  .login__signInButton {
+    background-color: #e3ce15;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .login__signInButton:hover {
+    background-color: #ddb347;
+  }
+  
+  .login p {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .login__signUpButton {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid rgb(119, 116, 116);
+    border-radius: 9px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 0 7px rgb(233, 238, 238);
+  }
+  
+  .login__signUpButton:hover {
+    background-color: #e7e9ed;
+  }
+  
+  .login__paragraph {
+    font-size: small;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: normal;
+  }
+  
+  .login__formDetails {
+    border: 1px solid #5b5959;
+    box-shadow: 0 0 7px rgb(131, 132, 132);
+    width: 350px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .login__logo{
+    margin-bottom: 20px;
+    max-width: 170px;
+    height: auto;
 
-.login__signInButton { background-color: #f0c14b; color: #111; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 10px; width: 100%;}
-
-.login__signInButton:hover { background-color: #ddb347; }
-
-.login p { font-size: 12px; text-align: center; }
-
-.login__signUpButton { background-color: white; color: black; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; width: 100%; }
-
-.login__signUpButton:hover { background-color: #94999f; }
-
-.login__paragraph { font-size: small; text-align:left; margin-top:10px; margin-bottom:10px; line-height:normal }
-
-.login__formDetails {border: 1px solid #302e2e;
-    width: 350px; padding: 30px 30px 30px 30px;
-border-radius: 5px;}
+  }

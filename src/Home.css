@@ -21,3 +21,20 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .home {
+    padding: 5px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px; 
+  }
+
+  .home__banner {
+    margin-bottom: -150px; 
+  }
+}

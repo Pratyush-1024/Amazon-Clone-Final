@@ -1,18 +1,12 @@
 export const initialState = {
   basket: [],
   user: null,
-  user_address:null,
 };
 
 function reducer(state, action) {
 
   switch (action.type) {
 
-    case 'SET_ADDRESS':
-      return{
-        ...state,
-        user_address:action.address
-      }
 
     case 'SET_USER':
       return{

@@ -36,6 +36,7 @@ function Checkout() {
       )}
 
       </div>
+      <br /> 
 
       {basket.length>0&&(
         <div className='checkout__subtotal'>
